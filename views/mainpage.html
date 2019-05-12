@@ -1,0 +1,89 @@
+<div id="main">
+
+    <style>
+        #main {
+            background: #DCDCDC;
+            width: 100%;
+            /* height: 100%; */
+            font-family: sans-serif;
+            /*border: 1px solid black;*/
+            /*border-radius: 2px;*/
+            /*margin: 10px;*/
+            box-sizing: border-box;
+
+        }
+
+        #header {
+            width: 100%;
+            height: 100px;
+            background: #32bcad;
+            padding: 2%;
+            box-sizing: border-box;
+
+        }
+
+        #block {
+            padding-top: 100%;
+        }
+
+        #content {
+            height: 60%;
+            width: 100%;
+            padding-left: 5%;
+            padding-right: 5%;
+            padding-top: 2%;
+            box-sizing: border-box;
+        }
+
+        #footer {
+            background-color: #3f4867;
+            height: 20%;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    </style>
+
+    <div id="header" style="background: blue">
+        <div id="block">
+            <h1 style="color:white"> Hi Guys </h1>
+        </div>
+    </div>
+    <div id="content">
+        <div id="text">
+            <h3><a href="<%= locals.link1 %>"><%= locals.title1 %></a></h3>
+            <p><%= locals.detail1 %>
+            </p>
+        </div>
+        <div id="text">
+            <h3><a href="<%= locals.link2 %>"><%= locals.title2 %></a></h3>
+            <p><%= locals.detail2 %>
+            </p>
+        </div>
+
+        <div id="text">
+            <h3><a href="<%= locals.link3 %>"><%= locals.title3 %></a></h3>
+            <p><%= locals.detail3 %>
+            </p>
+        </div>
+
+        <div id="text">
+            <h3><a href="<%= locals.link4 %>"><%= locals.title4 %></a></h3>
+            <p><%= locals.detail4 %>
+            </p>
+        </div>
+
+        <div id="text">
+            <h3><a href="<%= locals.link5 %>"><%= locals.title5 %></a></h3>
+            <p><%= locals.detail5 %>
+            </p>
+        </div>
+    </div>
+</div>
+<div id="footer">
+
+</div>
+</div>

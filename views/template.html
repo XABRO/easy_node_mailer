@@ -1,0 +1,155 @@
+<div id="main" style="align: center">
+
+    <style>
+        #main {
+            background: #DCDCDC;
+            width: 100%;
+            height: 100%;
+            font-family: sans-serif;
+            /*border: 1px solid black;*/
+            /*border-radius: 2px;*/
+            /*margin: 10px;*/
+            box-sizing: border-box;
+
+        }
+
+        #header {
+            width: 100%;
+            height: 20%;
+            background: #32bcad;
+            padding: 2%;
+            box-sizing: border-box;
+
+        }
+
+        #content {
+            height: 70%;
+            width: 100%;
+            padding-left: 2%;
+            padding-right: 0%;
+            padding-top: 0%;
+            box-sizing: border-box;
+        }
+
+        #footer {
+            background-color: #3f4867;
+            height: 10%;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        input[type=textarea] {
+
+            padding: 10px;
+            height: 30px;
+            position: relative;
+            left: 0;
+            outline: none;
+            border: 1px solid #cdcdcd;
+            border-color: rgba(0, 0, 0, .15);
+            background-color: white;
+            font-size: 16px;
+            width: 600px;
+        }
+
+        input[type=text] {
+            padding: 10px;
+            height: 30px;
+            position: relative;
+            left: 0;
+            outline: none;
+            border: 1px solid #cdcdcd;
+            border-color: rgba(0, 0, 0, .15);
+            background-color: white;
+            font-size: 16px;
+            width: 200px;
+        }
+
+        span{
+            font-size: 14px;
+            padding-right: 185px;
+        }
+
+        .emails{
+            width: 300px !important;
+        }
+    </style>
+
+    <div id="header" style="background:">
+        <div id="block">
+            <h1 style="color:white"> HTML Mailer </h1>
+        </div>
+    </div>
+    <div id="content">
+        <div id="text">
+            <h3><a href="abc.com">Please enter the details</a></h3>
+            </br>
+            <form method="POST" action="/send-mail">
+                <div class="content">
+
+                    <div ><span>Title</span><span>Link</span><span>Description</span></div>
+
+                    <div class="boxes-input">
+                        <input name="heading1" type="text">
+                        <input name="link1" type="text">
+                        <input name="details1" type="textarea">
+                    </div>
+                </div>
+                </br>
+
+                <div class="boxes-input">
+
+                    <input name="heading2" type="text">
+                    <input name="link2" type="text">
+                    <input name="details2" type="textarea">
+                </div>
+
+                </br>
+
+                <div class="boxes-input">
+
+                    <input name="heading3" type="text">
+                    <input name="link3" type="text">
+
+                    <input name="details3" type="textarea">
+                </div>
+
+                </br>
+
+                <div class="boxes-input">
+
+                    <input name="heading4" type="text">
+                    <input name="link4" type="text">
+
+                    <input name="details4" type="textarea">
+                </div>
+
+                </br>
+
+                <div class="boxes-input">
+
+                    <input name="heading5" type="text">
+                    <input name="link5" type="text">
+
+                    <input name="details5" type="textarea">
+                </div>
+
+                </br>
+
+                Emails separated by ",":
+                <input class="emails" type="text" name="emails"> </br>
+                Subject: <input class="emails" type="text" name="subject">
+            </br>
+                <button type="submit">Send mails</button>
+
+            </form>
+        </div>
+    </div>
+    <div id="footer">
+
+    </div>
+</div>
